@@ -4,7 +4,8 @@ document.addEventListener('mouseup', function () {
     return;
   }
   var query = selection.toString();
-  if (/\s/.test(query)) {
+  if (query.indexOf('"') >= 0) {
+    console.error('word-highlight: Resist to search for query with quotes.');
     return;
   }
   var xpathResult = document.evaluate('//text()[contains(.,"' + query + '")]', document, null, XPathResult.ANY_TYPE, null);

@@ -11,6 +11,10 @@ Highlight words on a page by selecting them with mouse.
 [david]: https://david-dm.org/eush77/word-highlight
 [david-badge]: https://david-dm.org/eush77/word-highlight.png
 
+## Limitations
+
+It can't match text across text nodes.
+
 ## Install
 
 ```
