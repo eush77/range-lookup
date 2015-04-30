@@ -1,0 +1,31 @@
+{
+  "name": "word-highlight",
+  "version": "0.0.0",
+  "description": "Highlight words on a page by selecting them with mouse",
+  "author": "Eugene Sharygin <eush77@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "homepage": "https://github.com/eush77/word-highlight",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eush77/word-highlight"
+  },
+  "bugs": {
+    "url": "https://github.com/eush77/word-highlight/issues"
+  },
+  "keywords": [
+    "word",
+    "highlight",
+    "selection",
+    "range",
+    "xpath",
+    "textContent",
+    "node",
+    "occurences",
+    "match"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
