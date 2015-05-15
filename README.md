@@ -4,7 +4,7 @@
 
 [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
-Highlight words on a page by selecting them with mouse.
+Highlight all occurences of a word on a page by mouse-selecting it.
 
 [travis]: https://travis-ci.org/eush77/word-highlight
 [travis-badge]: https://travis-ci.org/eush77/word-highlight.svg
@@ -13,12 +13,18 @@ Highlight words on a page by selecting them with mouse.
 
 ## Limitations
 
-It can't match text across text nodes.
+Unfortunately, this script is not capable of matching text that crosses text nodes boundaries.
+
+## CLI
+
+```
+wordhi <HTML
+```
 
 ## Install
 
 ```
-npm install word-highlight
+npm install [-g] word-highlight
 ```
 
 ## License
