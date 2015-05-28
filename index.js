@@ -2,6 +2,10 @@
 
 
 module.exports = function (query) {
+  if (!query.length) {
+    return [];
+  }
+
   var xpathResult = document.evaluate('//text()[contains(.,"' + query + '")]',
                                       document, null, XPathResult.ANY_TYPE, null);
   var result = [];
