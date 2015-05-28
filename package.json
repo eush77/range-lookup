@@ -5,7 +5,7 @@
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "tape test/*.js"
+    "build-example": "browserify example/index.js -o example/bundle.js"
   },
   "files": [
     "index.js"
@@ -30,5 +30,7 @@
     "match"
   ],
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "browserify": "^10.2.1"
+  }
 }

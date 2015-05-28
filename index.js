@@ -9,6 +9,7 @@ module.exports = function (query) {
   while (node = xpathResult.iterateNext()) {
     var textContent = node.textContent;
     var re = RegExp(query, 'g');
+    var pos;
     while (pos = re.exec(textContent)) {
       var range = document.createRange();
       range.setStart(node, pos.index);
@@ -16,4 +17,5 @@ module.exports = function (query) {
       result.push(range);
     }
   }
+  return result;
 };
