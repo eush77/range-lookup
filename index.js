@@ -8,6 +8,10 @@ module.exports = function (query) {
     return [];
   }
 
+  if (query.indexOf('"') >= 0) {
+    throw new Error('Unimplemented: can\'t match &quot;');
+  }
+
   var xpathResult = document.evaluate('//text()[contains(.,"' + query + '")]',
                                       document, null, XPathResult.ANY_TYPE, null);
   var result = [];
