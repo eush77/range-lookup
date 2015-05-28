@@ -29,7 +29,9 @@
     "occurences",
     "match"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "kmp-matcher": "eush77/kmp-matcher#bind-kmp"
+  },
   "devDependencies": {
     "browserify": "^10.2.1"
   }

@@ -1,5 +1,7 @@
 'use strict';
 
+var kmp = require('kmp-matcher').kmp;
+
 
 module.exports = function (query) {
   if (!query.length) {
@@ -11,15 +13,13 @@ module.exports = function (query) {
   var result = [];
   var node;
   while (node = xpathResult.iterateNext()) {
-    var textContent = node.textContent;
-    var re = RegExp(query, 'g');
-    var pos;
-    while (pos = re.exec(textContent)) {
-      var range = document.createRange();
-      range.setStart(node, pos.index);
-      range.setEnd(node, pos.index + query.length);
-      result.push(range);
-    }
+    kmp(node.textContent, query)
+      .forEach(function (start) {
+        var range = document.createRange();
+        range.setStart(node, start);
+        range.setEnd(node, start + query.length);
+        result.push(range);
+      });
   }
   return result;
 };
