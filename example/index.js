@@ -10,9 +10,9 @@ var lookup = function (query) {
 };
 
 
-document.addEventListener('DOMContentLoaded', function () {
+(function () {
   var queryEl = document.querySelector('input');
   queryEl.addEventListener('keyup', function () {
     lookup(queryEl.value);
   });
-});
+}());
