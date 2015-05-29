@@ -1,7 +1,7 @@
 {
   "name": "range-lookup",
   "version": "0.0.0",
-  "description": "Find all DOM ranges for a given text string",
+  "description": "Find matching DOM ranges for a given text string",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
   "scripts": {

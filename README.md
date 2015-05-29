@@ -4,7 +4,7 @@
 
 [![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
 
-Find all [DOM ranges][range] for a given text string.
+Find all matching [DOM ranges][range] for a given text string.
 
 [range]: https://developer.mozilla.org/en-US/docs/Web/API/range
 
@@ -31,12 +31,11 @@ ranges.forEach(selection.addRange.bind(selection));
 
 `query` — string to search for.
 
-Returns array of ranges, one for each match.
+Returns array of matching ranges.
 
 ## Limitations
 
 - This module is not capable of matching text that crosses text nodes boundaries.
-- Double quotation marks (`"`) are not supported. PRs welcome.
 
 ## Install
 
