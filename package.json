@@ -1,7 +1,7 @@
 {
-  "name": "word-highlight",
+  "name": "range-lookup",
   "version": "0.0.0",
-  "description": "Highlight words on a page by selecting them with mouse",
+  "description": "Find all DOM ranges for a given text string",
   "author": "Eugene Sharygin <eush77@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -10,22 +10,22 @@
   "files": [
     "index.js"
   ],
-  "homepage": "https://github.com/eush77/word-highlight",
+  "homepage": "https://github.com/eush77/range-lookup",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eush77/word-highlight"
+    "url": "https://github.com/eush77/range-lookup"
   },
   "bugs": {
-    "url": "https://github.com/eush77/word-highlight/issues"
+    "url": "https://github.com/eush77/range-lookup/issues"
   },
   "keywords": [
-    "word",
-    "highlight",
-    "selection",
+    "dom",
     "range",
-    "xpath",
-    "textContent",
+    "search",
+    "lookup",
+    "text",
     "node",
+    "textContent",
     "occurences",
     "match"
   ],
