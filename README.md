@@ -4,9 +4,12 @@
 
 [![Dependency Status][david-badge]][david]
 
-Find all matching [DOM ranges][range] for a given text string.
+Find all matching DOM [ranges][range] for a given text string.
+
+[Demo.][demo]
 
 [range]: https://developer.mozilla.org/en-US/docs/Web/API/range
+[demo]: https://eush77.github.io/range-lookup
 
 [david]: https://david-dm.org/eush77/range-lookup
 [david-badge]: https://david-dm.org/eush77/range-lookup.png
@@ -32,7 +35,7 @@ ranges.forEach(selection.addRange.bind(selection));
 
 `query` — string to search for.
 
-Returns array of matching ranges.
+Returns array of matching [ranges][range].
 
 ## Limitations
 
