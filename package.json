@@ -30,7 +30,7 @@
     "match"
   ],
   "dependencies": {
-    "kmp-matcher": "eush77/kmp-matcher#bind-kmp"
+    "kmp-matcher": "^0.1.2"
   },
   "devDependencies": {
     "browserify": "^10.2.1"
