@@ -2,14 +2,12 @@
 
 # range-lookup
 
-[![Build Status][travis-badge]][travis] [![Dependency Status][david-badge]][david]
+[![Dependency Status][david-badge]][david]
 
 Find all matching [DOM ranges][range] for a given text string.
 
 [range]: https://developer.mozilla.org/en-US/docs/Web/API/range
 
-[travis]: https://travis-ci.org/eush77/range-lookup
-[travis-badge]: https://travis-ci.org/eush77/range-lookup.svg
 [david]: https://david-dm.org/eush77/range-lookup
 [david-badge]: https://david-dm.org/eush77/range-lookup.png
 
