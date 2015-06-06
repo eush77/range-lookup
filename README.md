@@ -31,11 +31,15 @@ ranges.forEach(selection.addRange.bind(selection));
 
 ## API
 
-### `rangeLookup(query)`
+### `rangeLookup(query, [opts])`
 
 `query` — string to search for.
 
 Returns array of matching [ranges][range].
+
+#### `opts.ignoreCase`
+
+Whether to ignore case while attempting a match in a string. Defaults to `false`.
 
 ## Limitations
 
