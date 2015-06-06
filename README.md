@@ -18,6 +18,9 @@ var rangeLookup = require('range-lookup');
 
 var ranges = rangeLookup('some string');
 
+ranges
+//=> Array [ Range, Range, Range, Range ]
+
 // Highlight ranges.
 var selection = window.getSelection();
 ranges.forEach(selection.addRange.bind(selection));
